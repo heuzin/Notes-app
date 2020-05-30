@@ -2,6 +2,8 @@
 
 <html>
     <head>
+        <title>Notes app</title>
+        <link href="/images/favicon.png" rel="icon">
         <link href="/styles/styles.css" rel="stylesheet">
     </head>
     <body>
@@ -17,11 +19,13 @@
                 <a href="/index.html">Home</a>
                 <span id="last-edited"></span>
             </div>
-
         </div>
-        <input id="note-tittle" placeholder="Note Tittle">
-        <textarea id="note-body" placeholder="Enter note text"></textarea>
-        <button id="remove-note">Remove Note</button>
+
+        <div class="container">
+            <input id="note-tittle" class="title-input" placeholder="Note Tittle">
+            <textarea id="note-body" class="body-input" placeholder="Enter note text"></textarea>
+            <button id="remove-note" class="button button--secondary">Remove Note</button>
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
         <script src="/scripts/notes-functions.js"></script>
